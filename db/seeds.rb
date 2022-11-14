@@ -6,6 +6,7 @@ Review.delete_all
 puts "Finished Clean"
 
 puts "Seeding Data"
+
 kreft = Author.create(name: 'Peter Kreeft')
 nietzsche = Author.create(name: "Friedrich Wilhelm Nietzsche")
 
