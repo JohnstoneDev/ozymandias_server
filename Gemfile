@@ -52,6 +52,10 @@ group :test do
 end
 
 
-gem 'pg', '0.18.1', group: :production
+# Production gems 
 
- gem 'rails_12factor', group: :production
+ group :production do 
+    gem 'pg'
+    gem 'activerecord-postgresql-adapter'
+    gem 'rails_12factor'
+ end 
