@@ -6,6 +6,8 @@ GEM
     activerecord (6.1.7)
       activemodel (= 6.1.7)
       activesupport (= 6.1.7)
+    activerecord-postgresql-adapter (0.0.1)
+      pg
     activesupport (6.1.7)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
@@ -96,8 +98,9 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord (~> 6.1)
+  activerecord-postgresql-adapter
   database_cleaner (~> 2.0)
-  pg (= 0.18.1)
+  pg
   pry (~> 0.14.1)
   rack-contrib (~> 2.3)
   rack-cors (~> 1.1)
