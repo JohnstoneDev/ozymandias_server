@@ -27,7 +27,7 @@
 #### The app is setup to communicate with a React frontend application that is hosted here https://github.com/JohnstoneDev/ozymandias_client/
 <br>
 
-#### To see the associated CRUD methods, fork and clone both repositories, and run `npm install` to installl the dependinces for the client application and `bundle install` or `bundle` to install the dependincies for the server.
+#### To see the associated CRUD methods, fork and clone both repositories, and run `npm install` to install the dependencies for the client application and `bundle install` or `bundle` to install the dependencies for the server.
 <br>
 
 #### The server can be started by running `bundle exec rake server` that will start the server on `[port 9292]` on your machine, it is required to run on this port because the API calls in the frontend respond to that. 
