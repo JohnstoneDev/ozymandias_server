@@ -6,7 +6,7 @@
 ### This project uses the Sinatra ActiveRecord gem, A rack web server and Sinatra to create a server for a the react client.
 <br>
 
-#### The database used is sqlite3 and the associations and relationships are made using ActiceRecord
+#### The database used is sqlite3 and the associations and relationships are made using ActiveRecord
 
 #### The application has three models : <li> A Book </li> <li> An Author </li> <li>A Review </li>
 <br>
