@@ -68,7 +68,7 @@ class ApplicationController < Sinatra::Base
         book_review = Review.find_by(book_id: params[:id])
 
         book_author = Author.find_by(name: book.author_name)
-        book_author.books.count == 0 ? book_author.destroy : book_author
+        book_author.books.count == 1 ? book_author.destroy : book_author
 
         book_review.destroy
         book.destroy.to_json
