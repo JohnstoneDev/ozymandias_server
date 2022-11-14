@@ -51,7 +51,10 @@ group :test do
   gem "rspec-json_expectations", "~> 2.2"
 end
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 02e8be5c40d56bf1400b8b8b5e415140e3c0bbbe
 # Production gems 
 
  group :production do 
