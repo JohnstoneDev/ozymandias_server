@@ -62,3 +62,6 @@ end
 group :production do
   gem 'pg'
 end
+
+
+# Attemp heroku build with new configurations set. 
