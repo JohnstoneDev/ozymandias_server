@@ -1,5 +1,8 @@
 source "https://rubygems.org"
 
+# use Ruby 3.1.2
+ruby "3.1.2"
+
 # A DSL for quickly creating web applications
 # https://github.com/sinatra/sinatra
 gem "sinatra", "~> 2.1"
@@ -28,9 +31,6 @@ gem "sinatra-activerecord", "~> 2.0"
 # https://github.com/ruby/rake
 gem "rake", "~> 13.0"
 
-# Provides functionality to interact with a SQLite3 database
-gem "sqlite3", "~> 1.4", group: :development
-
 # Require all files in a folder
 gem "require_all", "~> 3.0"
 
@@ -51,14 +51,14 @@ group :test do
   gem "rspec-json_expectations", "~> 2.2"
 end
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 02e8be5c40d56bf1400b8b8b5e415140e3c0bbbe
-# Production gems 
 
- group :production do 
-    gem 'pg'
-    gem 'activerecord-postgresql-adapter'
-    gem 'rails_12factor'
- end 
+# Provides functionality to interact with a SQLite3 database
+
+group :development, :test do
+ gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+end
